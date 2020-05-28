@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Budgeteer</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/budgeteer.js"></script>
+</head>
+<body>
+
+	<div class='container'>
+		<div class='navbar-top'>
+			<div class='navbar-title'>
+				<h1>Budgeteer</h1>
+			</div>
+			<div class='navbar-navigation'>
+				<div class='navigation-border'>
+					<div class='navbar-button'>
+						<div><a href="index.html">Home</a></div>
+					</div>
+					<div class='navbar-button'>
+						<div class='navbar-selected'><a href="budget.html">Budget</a></div>
+					</div>
+					<div class='navbar-button'>
+						<div><a href="blog.html">Blog</a></div>
+					</div>
+					<div class='navbar-button'>
+						<div><a href="#">Contact</a></div>
+					</div>
+					<div class='navbar-button'>
+						<div><a href="#">Login</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='header'>
+			<div class='header-subtitle-and-search'>
+				<div class='header-subtitle'>
+					<div class='header-subtitle-text'>
+						<div class='text-quote'>
+							Becoming rich is hard. Staying broke is hard. Choose your hard.
+						</div>
+						<div class='text-author'>
+							Eric Worre
+						</div>
+					</div>
+				</div>
+				
+				<div class='header-search'>
+					<div class='header-search-body'>
+						<div class='header-username-search-container'>
+							<div class='header-username'>
+								<p>Hello <span id='username'>EverToffee</span></p>
+							</div>
+						</div>
+						<div class='header-username-search-container'>
+							<div class='header-search-body-inner'>
+								<div class='search-inner'>
+									<img src='../images/icon-search.png' alt='search' /><input type='text'/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class='header-content-begin'>
+				<div class='header-content-budget'>
+					<div class='header-content-budget-top'>
+						<div class='budget-top-icon'>
+							<img src='../images/icon-planner.png' alt='calendar' />
+						</div>
+						<div class='budget-top-heading'>
+							Monthly Budget Forecast:
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='main-body'>
+			<div class='header-boxes'>
+				<div class='budget-body'>
+					<div class='budget-body-content'>
+					
+						<div class='budget-mini-nav'>
+							<a href="#">February</a>
+							<a href="#">March</a>
+							<a href="#">April</a>
+							<a href="#">May</a>
+							<a href="#">June</a>
+							<a href="#">July</a>
+							<a href="#">August</a>
+						</div>
+						
+						<div class="budget-content-all">
+						
+							<div class="budget-data-row date-row">
+								<div>Date</div>
+								<div id="description">Description</div>
+								<div>Amount</div>
+								<div>Balance</div>
+								<div>Modify</div>
+							</div>
+							
+							<div class="budget-data-row" id="startingBalDiv">
+								<div></div>
+								<div id="description">Starting Balance</div>
+								<div></div>
+								<div>$0.00</div>
+								<div></div>
+                            </div>
+							
+							<div id="d050120">
+								<div class="budget-data-row date-row" >
+									<div>
+										May 1, 2020
+										(<a href="javascript:void" onClick="addToDate('d050120')">+</a>)
+									</div>
+									<div id="description"></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+
+								<div class="budget-data-row">
+									<div></div>
+									<div id="description">Income</div>
+									<div>$900.00</div>
+									<div>$900.00</div>
+									<div><img src='../images/delete.png' alt='delete' /></div>
+								</div>
+							</div>
+							
+							<div class="budget-data-row date-row">
+								<div>May 9, 2020</div>
+								<div id="description"></div>
+								<div></div>
+								<div></div>
+								<div></div>
+                            </div>
+							
+							<div class="budget-data-row">
+								<div></div>
+								<div id="description">Groceries</div>
+								<div>-$56.00</div>
+								<div>$844.00</div>
+								<div><img src='../images/delete.png' alt='delete' /></div>
+                            </div>
+							
+							<div class="budget-data-row date-row">
+								<div>May 12, 2020</div>
+								<div id="description"></div>
+								<div></div>
+								<div></div>
+								<div></div>
+                            </div>
+							
+							<div class="budget-data-row">
+								<div></div>
+								<div id="description">Petrol</div>
+								<div>-$30.00</div>
+								<div>$814.00</div>
+								<div><img src='../images/delete.png' alt='delete' /></div>
+                            </div>
+							
+							<div class="budget-data-row">
+								<div></div>
+								<div id="description">Groceries</div>
+								<div>-$56.00</div>
+								<div>$758.00</div>
+								<div><img src='../images/delete.png' alt='delete' /></div>
+                            </div>
+								
+								
+							<div class="budget-data-row date-row">
+								<div></div>
+								<div id="description">Final Balance:</div>
+								<div></div>
+								<div> $758.00</div>
+								<div></div>
+                            </div>
+							
+						</div>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+		</div>		
+		
+		<div class='horizontal-panel'>
+			<div class='horizontal-content'>
+				<div class='horizontal-content-centre-box'>
+					<div class='content-graph'>
+						<img src='../images/spending-chart.png' alt='piegraph' />
+					</div>
+					<div class='content-text'>
+						<h3>Monthly Spending</h3>
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Groceries
+							</div>
+							<div class='daily-positive'>
+								$200.00
+							</div>
+						</div>
+						
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Petrol
+							</div>
+							<div class='daily-positive'>
+								$100.00
+							</div>
+						</div>
+						
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Golf
+							</div>
+							<div class='daily-positive'>
+								$140.00
+							</div>
+						</div>
+						
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Fitness
+							</div>
+							<div class='daily-positive'>
+								$176.00
+							</div>
+						</div>
+						
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Utilities
+							</div>
+							<div class='daily-positive'>
+								$300.00
+							</div>
+						</div>
+						
+						<div class='daily-item-row'>
+							<div class='daily-label'>
+								Rent
+							</div>
+							<div class='daily-positive'>
+								$1200.00
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class='horizontal-image'>
+
+			</div>
+		</div>
+		
+		<div class='main-footer'>		
+			<div class='footer-content'>
+				Copyright (c) Untitled. Design by Ashlee Deboer. Photos by pexels.com
+			</div>
+		</div>
+		
+		
+	</div>
+
+</body>
+</html>
