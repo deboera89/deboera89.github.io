@@ -8,13 +8,13 @@ body {
 	overflow-x: hidden;
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1351px) {
   body {
     background-color: #F09A9D; /* Red */
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1350px) {
   body {
     background-color: #669999; /* Red */
   }
