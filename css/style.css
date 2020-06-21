@@ -5,11 +5,16 @@ body {
 	background-color: #b2b2a0;
 }
 
+html {
+	height: 100%;
+}
+
 #container {
 	display: flex;
 	flex-direction: column;
 	height: 95vh;
 }
+
 
 
 #nav-header {
@@ -106,6 +111,13 @@ Info Box
 
 
 @media only screen and (max-width: 1350px) {
+
+	#main-area {
+		position: absolute;
+		top: 10px;
+	}
+	
+
 	#content-box {
 		flex-direction: column;
 		width: 100%;
@@ -216,8 +228,6 @@ Info Box
 	width: 100%;
 	height: 100%;
 
-
-
 }
 
 #content-title {
@@ -243,31 +253,26 @@ Info Box
 #content-about-main {
 	font-family: 'EB Garamond', serif;
 	display: flex;
-	flex: 1;
-	flex-direction: column;
-
+	height: 100%;
 }
 
 #about-main {
 	display: flex;
+	flex-direction: row;
 	height: 100%;
-
 }
 
 #about-main-left {
+	display: block;
 	width: 65%;
 	height: 100%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 #left-info-box {
  padding: 10px;
  margin: 0 10px 0 0;
  background-color: #BCBCAA;
+ box-sizing: border-box;
  height: 100%;
 }
 
@@ -280,6 +285,7 @@ Info Box
 }
 
 #right-info-box {
+
 	padding: 10px;
 	box-sizing: border-box;
 	background-color: #767664;
@@ -329,19 +335,75 @@ Info Box
 }
 
 #about-main-hobbies ul {
+	
 	letter-spacing: 1px;
 	box-sizing: border-box;
 	width: 100%;
 }
 
 #about-main-hobbies ul li {
+
 	margin-top: 5px;
 }
 
 
 @media only screen and (max-width: 1350px) {
+	#content-content {
+		margin-left: 0;
+	}
 	
+	#content-about {
+		font-size: 32px;
+	}
 	
+	#about-main-left {
+		width: 100%;
+	}
+	
+	#left-info-box {
+
+		width: 100%;
+		margin: 0px;
+	}
+	
+	#about-main {
+		flex-direction: column;
+	}
+	
+	#about-main-right {
+		width: 100%;
+	}
+	
+	#about-main-hobbies {
+		text-align: center;
+	}
+	
+	#content-title {
+			min-height: 125px;
+	}
+	.info-box-left {
+		text-align: center;
+	}
+	.title-border {
+		font-size: 48px;
+	}
+	
+	#right-info-box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	#about-main-hobbies ul li {
+		display: inline;
+	}
+	
+	#about-main-hobbies ul li:not(:first-child):before {
+		content: "  --  ";
+	}
+	
+	.flex-row {
+		display: flex;
+	}
 }
 
 
