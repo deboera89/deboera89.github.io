@@ -108,7 +108,8 @@ Info Box
 @media only screen and (max-width: 1350px) {
 	#content-box {
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
+		justify-content: flex-end;
 	}
 	
 	#content-nav-bar {
@@ -118,12 +119,21 @@ Info Box
 	
 	#content-split-left {
 		width: 100%;
-		
+	}
+	
+	#content-split-left img{
+		width: 64px;
 	}
 	
 	#self-image {
 		background-repeat: no-repeat;
 	}
+	
+	#name-title {
+		font-size: 48px;
+	}
+	
+	
 }
 
 /*
