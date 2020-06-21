@@ -133,7 +133,9 @@ Info Box
 		font-size: 48px;
 	}
 	
-	
+	#content-split-right {
+		width: 100%;
+	}
 }
 
 /*
@@ -336,6 +338,11 @@ Info Box
 	margin-top: 5px;
 }
 
+
+@media only screen and (max-width: 1350px) {
+	
+	
+}
 
 
 /*
