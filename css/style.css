@@ -233,7 +233,7 @@ Info Box
 --------------------------------------
 */
 
-#content-content {
+.content-content {
 	display: flex;
 	flex-direction:column;
 	height: 100%;
