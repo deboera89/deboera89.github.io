@@ -15,26 +15,21 @@ html {
 	height: 95vh;
 }
 
-
-
-#nav-header {
-	display: flex;
-	width: 100%;
+.flex-end-align {
+	align-items: flex-end;
 }
 
-.nav-header-split {
-	display: flex;
-	width: 50%;
-	justify-content: center;
+.flex-start-align {
+	align-items: flex-start;
 }
 
-.nav-button {
-	padding: 25px;
-	font-family: 'Roboto Slab', serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+.text-left {
+	text-align: left;
 }
 
+.text-right {
+	text-align: right;
+}
 
 /*
 --------------------------------------
@@ -114,7 +109,8 @@ Info Box
 
 	#main-area {
 		position: absolute;
-		top: 10px;
+		top: 0px;
+		left: 0px;
 	}
 	
 
@@ -215,13 +211,11 @@ Info Box
 #content-content {
 	display: flex;
 	flex-direction:column;
-	margin-left: 10px;
 	height: 100%;
 }
 
 
 #content-about {
-	display: block;
 	background-color: #858578;
 	box-sizing: border-box;
 	border-radius: 0 5px 5px 0; 
@@ -230,13 +224,14 @@ Info Box
 
 }
 
-#content-title {
+.content-title {
 	display: flex;
 	justify-content: flex-end;
 	box-sizing: border-box;
 	padding: 20px;
 	letter-spacing: 3px;
 	font-size: 24px;
+	text-transform: uppercase;
 	width: 100%;
 	height: 85px;
 	text-align: right;
@@ -270,10 +265,11 @@ Info Box
 
 #left-info-box {
  padding: 10px;
- margin: 0 10px 0 0;
+ margin: 0 10px 0 10px;
  background-color: #BCBCAA;
  box-sizing: border-box;
- height: 100%;
+ height: 98%;
+ border-radius: 0 0 10px 10px;
 }
 
 #about-main-right {
@@ -361,7 +357,6 @@ Info Box
 	}
 	
 	#left-info-box {
-
 		width: 100%;
 		margin: 0px;
 	}
@@ -372,14 +367,15 @@ Info Box
 	
 	#about-main-right {
 		width: 100%;
+		box-sizing: content-box;
 	}
 	
 	#about-main-hobbies {
 		text-align: center;
 	}
 	
-	#content-title {
-			min-height: 125px;
+	.content-title {
+		min-height: 125px;
 	}
 	.info-box-left {
 		text-align: center;
@@ -392,6 +388,8 @@ Info Box
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+		margin: 0;
+
 	}
 	#about-main-hobbies ul li {
 		display: inline;
@@ -417,14 +415,149 @@ Info Box
 
 
 #content-projects {
-	display: none;
 	background-color: #858578;
 	box-sizing: border-box;
 	border-radius: 0 5px 5px 0; 
 	width: 100%;
 	height: 100%;
+	overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.project-content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-family: 'EB Garamond', serif;
+	background-color: #BCBCAA;
+}
+
+
+.project-content-even {
+		background-color: #a5a58d;
+}
+
+.project-title-bar {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-title {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.project-link a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.tech-used li{
+	display: inline;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.even-row-list {
+	direction: rtl;
+}
+
+#minor-projects {
+	font-family: 'EB Garamond', serif;
+	background-color: #BCBCAA;
+	display: flex;
+}
+
+#minor-projects .project-title {
+	font-size: 16px;
+}
+
+.minor-project {
+	width: 50%;
 	padding: 5px;
 }
+
+@media only screen and (max-width: 1350px) {
+	#content-projects {
+		overflow-y: hidden;
+	}
+	
+	
+	.project-title {
+		text-align: center;
+		font-size: 48px;
+	}
+	.minor-project .project-title {
+		text-align: center;
+		font-size: 32px !important;
+	}
+	
+	.minor-project:first-child {
+		border-right: 1px dashed #a5a58d;
+	}
+	
+	.project-link {
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	.flex-end-align {
+		align-items: center;
+	}
+	
+	.tech-used {
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.tech-used li {
+		font-size: 24px;
+		
+	}
+	
+	.even-row-list {
+		text-align: center;
+		list-style: none;
+		font-size: 24px;
+	}
+	
+	.odd-row-list {
+		text-align: center;
+		list-style: none;
+		font-size: 24px;
+	}
+	
+	.project-content p {
+		text-align: center;
+		font-size: 28px;
+	}
+	
+	
+}
+
+
+
 
 /*
 --------------------------------------
@@ -436,7 +569,6 @@ Info Box
 
 
 #content-contact {
-	display: none;
 	background-color: #858578;
 	box-sizing: border-box;
 	border-radius: 0 5px 5px 0; 
@@ -445,6 +577,9 @@ Info Box
 	padding: 5px;
 }
 
+.display-none {
+	display: none;
+}
 
 
 @media only screen and (max-width: 1350px) {
