@@ -266,8 +266,12 @@ Info Box
 .title-border {
 	padding: 5px;
 	border-bottom: 6px solid transparent;
+	border-right: none;
+	border-top: none;
+	border-left: none;
 	border-image: linear-gradient(to right, #858578 , #b2b2a0);
 	border-image-slice: 1;
+	
 }
 
 #content-about-main {
@@ -325,6 +329,9 @@ Info Box
 	width: 100%;
 	margin-left: 5px;
 	border-bottom: 2px solid transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 	border-image: linear-gradient(to left, #858578 , #b2b2a0);
 	border-image-slice: 1;
 }
