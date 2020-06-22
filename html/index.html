@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<script src="../js/script.js"></script>
 	</head>
-	<body>
+	<body onload='pageLoad()'>
 	<div id='container'>
 		<div id='main-area'>
 			<div id='content-box'>
@@ -34,13 +34,13 @@
 								</div>
 							</a>
 							<a href='#' onclick="showDiv('content-projects', 'about-projects')">
-								<div id='about-projects' class='content-button content-selected'>
+								<div id='about-projects' class='content-button'>
 									<img src='../images/tasks.png' alt='projects' width='24' />
 									Projects
 								</div>
 							</a>
 							<a href='#' onclick="showDiv('content-contact', 'about-contact')">						
-								<div id='about-contact' class='content-button'>
+								<div id='about-contact' class='content-button content-selected'>
 									<img src='../images/contact.png' alt='contact' width='24' />
 									Contact
 								</div>
@@ -49,7 +49,7 @@
 					</div>
 					
 					
-					<div id="content-about" class="info-box  display-none">
+					<div id="content-about" class="info-box display-none">
 						<div id='content-content'>
 							<div class='content-title'>
 								<div class='title-border'>
@@ -100,7 +100,7 @@
 						
 						
 						
-					<div id="content-projects" class="info-box">
+					<div id="content-projects" class="info-box display-none">
 						<div id='content-content'>
 						  <div class='content-title'>
 							<div class='title-border'>
@@ -187,7 +187,7 @@
 					</div>
 						
 						
-					<div id="content-contact" class="info-box display-none">
+					<div id="content-contact" class="info-box">
 						<div id='content-content'>
 							<div class='content-title'>
 								<div class='title-border'>
@@ -195,9 +195,33 @@
 								</div>
 							</div>
 							
-						  <h2>Contact</h2>
-						  <p>Email: </p>
-						  <p>asheedeboer@gmail.com</p>
+							<div id='contact-main'>
+								<div id='contact-middle'>
+									<table>
+										<tr>
+											<td>Email: </td>
+											<td>ashleedeboer@gmail.com</td>
+										</tr>
+										
+										<tr>
+											<td>Phone: </td>
+											<td id='ph'></td>
+										</tr>
+										
+										<tr>
+											<td>Facebook: </td>
+											<td><a href='www.facebook.com/ashlee.deboer' target='new'>ashlee.deboer</a></td>
+										</tr>
+										
+										<tr>
+											<td>Instagram: </td>
+											<td><a href='www.instagram.com/deboer_a/' target='new'>deboer_a</a></td>
+										</tr>
+									
+									</table>
+								</div>
+							</div> 
+						
 						</div>
 					</div>
 					
