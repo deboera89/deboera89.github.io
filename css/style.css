@@ -670,7 +670,7 @@ Info Box
 	
 	#content-about {
 		display: block;
-		margin-top: 20px;
+		margin-top: 150px;
 		border-radius: 5px; 
 		height: 100%;
 	}
@@ -678,14 +678,14 @@ Info Box
 	
 	#content-projects {
 		display: block;
-		margin-top: 20px;
+		margin-top: 150px;
 		border-radius: 5px; 
 		height: 100%;
 	}
 	
 	#content-contact {
 		display: block;
-		margin-top: 20px;
+		margin-top: 150px;
 		border-radius: 5px;
 		height: 100%;		
 	}
