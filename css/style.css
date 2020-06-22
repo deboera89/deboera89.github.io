@@ -423,6 +423,15 @@ Info Box
 		margin: 0;
 
 	}
+	
+	#hobbies-text {
+		display: none;
+	}
+	
+	#about-main-hobbies {
+		border: 0;
+	}
+	
 	#about-main-hobbies ul li {
 		display: inline;
 	}
@@ -434,6 +443,12 @@ Info Box
 	.flex-row {
 		display: flex;
 	}
+	
+	#about-main-right .border-bottom {
+		border: 0;
+	}
+	
+	
 }
 
 
