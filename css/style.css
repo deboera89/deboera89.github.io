@@ -74,6 +74,22 @@ Info Box
 	border-radius: 5px; 
 }
 
+#developer-footer {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+}
+#developer {
+	padding: 5px;
+	font-size: 12px;
+	background-color: #9b9b8c;
+	border-radius: 5px 5px 0 0;
+}
+
+#mob-developer {
+	display: none;
+}
+
 #content-split-right {
 	display: flex;
 	flex-direction: column;
@@ -144,6 +160,15 @@ Info Box
 	#content-split-right {
 		width: 100%;
 	}
+	
+	#developer {
+		display: none;
+	}
+	
+	#mob-developer {
+		display: block;
+		padding: 10px;
+	}
 }
 
 /*
@@ -165,7 +190,7 @@ Info Box
 #nav-half {
 	display: flex;
 	justify-content: center;
-	width: 50%;
+	width: 70%;
 	min-width: 400px;
 }
 
