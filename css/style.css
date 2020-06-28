@@ -234,7 +234,7 @@ Info Box
 */
 
 .content-content {
-	display: flex;
+	display: relative;
 	flex-direction:column;
 	height: 100%;
 }
@@ -246,8 +246,13 @@ Info Box
 	border-radius: 0 5px 5px 0; 
 	width: 100%;
 	height: 100%;
-
+	overflow: hidden;
 }
+
+#content-about .content-content {
+ position: relative;
+}
+
 
 .content-title {
 	display: flex;
@@ -277,7 +282,8 @@ Info Box
 #content-about-main {
 	font-family: 'EB Garamond', serif;
 	display: flex;
-	height: 100%;
+	box-sizing: border-box;
+	height: 80%;
 }
 
 #about-main {
@@ -287,7 +293,9 @@ Info Box
 }
 
 #about-main-left {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 65%;
 	height: 100%;
 }
@@ -297,8 +305,8 @@ Info Box
  margin: 0 10px 0 10px;
  background-color: #BCBCAA;
  box-sizing: border-box;
- height: 98%;
- border-radius: 0 0 10px 10px;
+ height: 65%;
+ border-radius: 10px;
 }
 
 #about-main-right {
@@ -467,7 +475,11 @@ Info Box
 	border-radius: 0 5px 5px 0; 
 	width: 100%;
 	height: 100%;
-	overflow-y: scroll;
+	overflow: hidden;
+}
+
+#content-projects .content-content {
+ position: relative;
 }
 
 /* width */
@@ -621,7 +633,11 @@ Info Box
 	border-radius: 0 5px 5px 0; 
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
+}
 
+#content-contact .content-content {
+	position: relative;
 }
 
 .display-none {
@@ -633,7 +649,7 @@ Info Box
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: 80%;
 }
 
 #contact-middle {
