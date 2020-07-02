@@ -398,7 +398,9 @@ Info Box
 	
 	#left-info-box {
 		width: 100%;
+		height: 100%;
 		margin: 0px;
+		box-sizing: content-box;
 	}
 	
 	#about-main {
